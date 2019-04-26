@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" href="css/style.css">
       <title>twq的个人简历</title>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="//at.alicdn.com/t/font_1163388_j72pki6bkd.js"></script>
+      <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
   </head>
   <body>
-     <div class="topNavBar clearfix">
-         <a class="logo" src="#" alt="logo">
-             <span class="rs">RS</span>
-             <span class="card">card</span>
-         </a>
-         <nav>
-              <ul class="clearfix">
-                  <li><a href="#">关于</a></li>
-                  <li><a href="#">技能</a></li>
-                  <li><a href="#">作品</a></li>
-                  <li><a href="#">博客</a></li>
-                  <li><a href="#">日历</a></li>
-                  <li><a href="#">联系方式</a></li>
-                  <li><a href="#">其他</a></li>
-              </ul>
-         </nav>
+     <div class="topNavBar">
+         <div class="topNavBar-inner clearfix">
+            <a class="logo" src="#" alt="logo">
+                <span class="rs">RS</span>
+                <span class="card">card</span>
+            </a>
+                <nav>
+                    <ul class="clearfix">
+                        <li><a href="#">关于</a></li>
+                        <li><a href="#">技能</a></li>
+                        <li><a href="#">作品</a></li>
+                        <li><a href="#">博客</a></li>
+                        <li><a href="#">日历</a></li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </nav>           
+
+         </div>     
+     </div>
+      <div class="banner">
+          <div class="mask"></div>
       </div>
-      <div class="banner" style="background: url(#)"></div>
      <main>
-         <div class="card">
-             <div class="picture">
-                 <img src="" alt="headpicture">
-             </div>
-             <div class="text">
-                 <div class="profile">
-                     <span class="welcome">Hello</span>
-                     <h1>童雯茜</h1>
-                     <p>前端开发工程师</p>
-                     <hr>
-                     <dl>
-                         <dt>年龄</dt>
-                         <dd>23</dd>
-                         <dt>所在城市</dt>
-                         <dd>武汉</dd>
-                         <dr>邮箱</dr>
-                         <dt>83903580@qq.com</dt>
-                         <dr>电话</dr>
-                         <dd>13808660340</dd>
-                     </dl>
-                 </div>
-                 <footer class=""media>
-                     <a href="#"><img src="#" alt="..."></a>
-                     <a href="#"><img src="#" alt="..."></a>
-                     <a href="#"><img src="#" alt="..."></a>
-                     <a href="#"><img src="#" alt="..."></a>
-                     <a href="#"><img src="#" alt="..."></a>
-                     <a href="#"><img src="#" alt="..."></a>
-                     <a href="#"><img src="#" alt="..."></a>
-                 </footer>
-             </div>
+         <div class="userCard">
+             <div class="pictureAndText clearfix">
+                    <div class="picture">
+                            <img src="./img/avatar.jpg" width="299" height="347" alt="headpicture">
+                    </div>
+                    <div class="text">
+                            <span class="welcome">Hello
+                                <span class="triangle"></span>
+                            </span>
+                            <h1>童雯茜</h1>
+                            <p>前端开发工程师</p>
+                            <hr>
+                            <dl>
+                                <dt>年龄</dt>
+                                <dd>23</dd>
+                                <dt>所在城市</dt>
+                                <dd>武汉</dd>
+                                <dt>QQ</dt>
+                                <dd>15302665210</dd>
+                                <dt>邮箱</dt>
+                                <dd>839012345@qq.com</dd>
+                                <dt>电话</dt>
+                                <dd>13813456789</dd>    
+                                <dt>地址</dt>
+                                <dd>湖北省武汉市江岸区</dd>
+                            </dl>
+                    </div>
+            </div>
+            <footer class="media">
+                    <a href="#">
+                         <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-tuitetwitter43"></use>
+                        </svg>
+                    </a>   
+            </footer>            
          </div>
          <a class="button" href="#">下载 PDF 简历</a>
          <p>
