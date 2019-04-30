@@ -23,6 +23,14 @@ hr{
     border-top: 1px solid #DEDEDE;
 }
 
+ul,ol{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+
 .topNavBar{
     padding: 20px 0 20px 0;
     position:fixed;
@@ -52,7 +60,7 @@ hr{
 }
 .topNavBar>.topNavBar-inner>nav>ul>li>a{
     font-size: 12px;
-    color: rgba(128, 128, 105, 1);
+    color: #b7b7b7;
     text-decoration: none;
     font-weight: bold;
     border-top: 3px solid transparent;
@@ -79,13 +87,13 @@ hr{
 }
 .banner {
     height: 515px;
-    background-image: url(../img/rs-cover-3.jpg);
+    background-image: url(../img/rs-cover.jpg);
     background-position: center center;
     block-size: cover;
 }
 .banner .mask{
     height: 515px;
-    background-color: rgba(255, 192, 203, 0.4);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .userCard{
     border: 1px solid red;
@@ -93,9 +101,9 @@ hr{
     margin-left: auto;
     margin-right: auto;
     border-color: #FFF;
-    background-color: #ffffff;
+    background-color:white;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
-
 
 
 .userCard .welcome{
@@ -163,7 +171,6 @@ hr{
 }
 
 .userCard>footer.media>a{
-   /*border: 1px solid black;*/
     display: inline-block;
     width: 40px;
     height: 30px;
@@ -182,4 +189,159 @@ hr{
     fill: white;
     vertical-align:top;
 }
+
+body>main .downloadResume{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #CDCFD1;
+    background: #EFEFEF;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    transition: box-shadow 0.2s;
+}
+
+body>main .downloadResume:hover{
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.5);
+}
+
+body>main .downloadResume-wrapper{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family:KaiTi;
+    line-height: 20px;
+    font-size: 15x;
+}
+
+section.skills,
+section.portfolio{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+section.skills>h2,
+section.portfolio>h2{
+    text-align: center;
+    color: #3d4451;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+section.skills>ol{
+    background: white;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    padding: 42px 50px 10px;
+    margin-top: 30px;
+}
+
+section.skills h3{
+    font-size: 14px;
+    line-height: 1.1;
+   /* padding-right: 40px;*/
+}
+
+section.skills>ol>li{
+    float: left;
+    width: 46%;
+    box-sizing: border-box;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+section.skills>ol>li:nth-child(even){
+    float: right;
+}
+
+section.skills .progressBar{
+    height: 5px;
+    background: #FAE1E1;
+    border-radius: 2px;
+    margin: 4px 0 40px;
+}
+
+section.skills .progressBar>.progress{
+    height: 100%;
+    background: #E6686A;
+    width: 70%;
+}
+
+section.portfolio{
+    text-align: center;
+}
+
+section.portfolio>nav{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 32px;
+}
+
+section.portfolio>nav>ol{
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+}
+
+section.portfolio>nav>ol>li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+section.portfolio>nav>ol>li:nth-child(1){
+    margin-left: 0;
+}
+
+section.portfolio>nav .bar{
+    height: 5px;
+    background: white;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+}
+
+section.portfolio>nav .bar-inner{
+    height: 100%;
+    background: #E6686A;
+    width:50px;
+    border-radius: 2px;
+    margin-left: 0;
+    transition: all 0.3s;
+}
+
+section.portfolio>nav .bar.state-1 .bar-inner{
+    margin-left: 0;
+    width: 40px;
+}
+
+section.portfolio>nav .bar.state-2 .bar-inner{
+    margin-left: 65px;
+    width: 50px;
+}
+
+section.portfolio>nav .bar.state-3 .bar-inner{
+    margin-left: 140px;
+    width: 94px;
+}
+
+section.portfolio .works{
+    position: relative;
+  }
+  section.portfolio .works > .big,
+  section.portfolio .works > .small {
+    position: absolute;
+  }
+
+
+
 
